@@ -1,0 +1,19 @@
+<h1 class="center">
+    Liste des Todos
+</h1>
+<div class="container">
+    <div class="row">
+        <div class="col m4 s6" *ngFor="let todo of Todos" >
+            <div class="card horizontal" >
+                <div class="card-image">
+                    <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/detail/001.png" alt="pokemon">
+                </div>
+                <div class="card-stacked">
+                    <p>{{ todo.id }}</p><p><small>{{ todo.todo | uppercase }}</small></p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
